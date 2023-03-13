@@ -30,8 +30,8 @@ function generateHTML(results){
       <a class="button" href="${result.recipe.url}"target="_blank">View Recipe</a>
     </div>
     <p class="item-data">Calories: ${result.recipe.calories.toFixed(2)}</p>
-    <p class="item-data">Health Label: ${result.recipe.healthLabels.length > 0 ? result.recipe.dietLabels: 'No Data Found'}</p>
-    <p class="item-data">Diet Label: ${result.recipe.dietLabels}</p>
+    <p class="item-data">Health Label: ${result && result.recipe && result.recipe.healthLabels && result.recipe.healthLabels.length > 0 ? result.recipe.healthLabels : 'No Data Found'}</p>
+<p class="item-data">Diet Label: ${result && result.recipe && result.recipe.dietLabels && result.recipe.dietLabels.length > 0 ? result.recipe.dietLabels : 'No Data Found'}</p>
   </div>`
    })
    result.innerHTML=generatedHTML;
