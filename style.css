@@ -59,6 +59,11 @@ form ion-icon{
     margin: -9px;
     color: rgb(118, 118, 118);
 }
+.Enter{
+    text-align: center;
+    font-size: 1.4rem;
+    color: whitesmoke;
+}
 .result{
     margin-top: 50px;
     width: 100%;
